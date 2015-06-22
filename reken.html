@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>rekenmachine</title>
+    <link type="text/css" href="style.css" rel="stylesheet">
+    <script src="reken.js"></script>
+</head>
+<body>
+    <div class="form">
+        <form name="form">
+            <input type ="text" disabled name="scherm" id="scherm">
+            <br />
+            <div class="one">
+                <input type="button" value="0" name="0" id="0" onclick="calcinput(0)">
+                <input type="button" value="1" name="1" id="1" onclick="calcinput(1)" />
+                <input type="button" value="2" name="2" id="2" onclick="calcinput(2)" />
+                <input type="button" value="*" id="*" onclick="multiply()" />
+            </div>
+
+            <div class="sec">
+                <input type="button" value="3" name="3" id="3" onclick="calcinput(3)" />
+                <input type="button" value="4" name="4" id="4" onclick="calcinput(4)" />
+                <input type="button" value="5" name="5" id="5" onclick="calcinput(5)" />
+                <input type="button" value="/" id="/" onclick="divide()" />
+            </div>
+
+            <div class="ther">
+                <input type="button" value="6" name="6" id="6" onclick="calcinput(6)" />
+                <input type="button" value="7" name="7" id="7" onclick="calcinput(7)" />
+                <input type="button" value="8" name="8" id="8" onclick="calcinput(8)" />
+                <input type="button" value="+" id="+" onclick="add()" />
+            <div/>
+
+            <div class="for">
+                <input type="button" value="9" name="9" id="9" onclick="calcinput(9)" />
+                <input type="button" value="-" id="-" onclick="substract()" />
+                <input type="button" value="=" id="=" onclick="compute()" />
+                <input type="button" value="C" id="clear" onclick="clr()" />
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
